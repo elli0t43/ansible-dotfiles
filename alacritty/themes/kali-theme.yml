@@ -1,0 +1,11 @@
+# Colors (kali theme)
+colors:
+  # default color
+  primary: 
+    background: '0x2d353b'
+    foreground: '0xd3c6aa'
+  
+  normal: 
+    black: '0x1F2229'
+    red: '0xD41919'
+    

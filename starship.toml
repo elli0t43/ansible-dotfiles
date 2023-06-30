@@ -1,0 +1,55 @@
+## FIRST LINE/ROW: Info & Status
+# First param ─┌
+[username]
+format = " [╭─]($style)elli0t43[->]($style)"
+style_user = "green"
+show_always = true
+
+# Second param
+[hostname]
+format = "[$hostname]($style) "
+style = "black"
+trim_at = "-"
+ssh_only = false
+disabled = false
+
+# Third param
+[directory]
+style = "blue"
+truncation_length = 0
+truncate_to_repo = true
+truncation_symbol = "repo: "
+
+# Before all the version info (python, nodejs, php, etc.)
+[git_status]
+style = "white"
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+deleted = "x"
+
+# Last param in the first line/row
+[cmd_duration]
+min_time = 1
+format = "⌥ [$duration]($style)"
+style = "green"
+disabled = false
+
+# Prompt: optional param 1
+[time]
+format = "  $time($style)\n"
+time_format = "%T"
+style = "black"
+disabled = true
+
+# Prompt: param 2 └─
+[character]
+success_symbol = " [右](black)"
+error_symbol = " [クロス](bold red)"
+
+# SYMBOLS
+#[status]
+#symbol = "⛔"
+#format = '[\[$symbol$status_common_meaning$status_signal_name$status_maybe_int\]]($style)'
+#map_symbol = true
+#disabled = false

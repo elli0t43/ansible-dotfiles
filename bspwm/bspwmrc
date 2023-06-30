@@ -1,0 +1,25 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+#bspc monitor -d code exploit vpn dev
+bspc monitor -d 0 1 2 3 4
+bspc config border_width         1
+bspc config window_gap          8
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc config focused_border_color "green"
+bspc config active_border_color "green"
+bspc config normal_border_color "blue"
+
+#$HOME/.config/polybar/launch.sh
+picom --config ~/.config/picom/picom.conf
+#nitrogen --random --set-zoom-fill ~/Documents/Wallpapers
+#nitrogen --set-zoom-fill ~/Documents/Wallpapers/minimal.jpg
+eww open bar
+feh --bg-scale --no-fehbg --randomize ~/Documents/Wallpapers
+vmware-user-suid-wrapper
+
